@@ -3,7 +3,15 @@
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
-      <div class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div>
+      <a
+        class="section-link"
+        :href="contactLinks.email">
+        <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
+      </a>
+
+      <div class="section-link">
+        <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
+      </div>
     </div>
 
     <div class="content">
@@ -43,22 +51,20 @@
 
         <div class="section">
           <div class="section-headline">
-            {{ lang.contact }}
+            More
           </div>
 
           <div class="section-content section-content--plain">
             <div class="section-link">
-              <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
+              <i class="section-link__icon material-icons">business</i>{{ person.contact.city }}
             </div>
 
-            <a
-              class="section-link"
-              :href="contactLinks.email">
-              <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
-            </a>
-
             <div class="section-link">
-              <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
+              <i class="section-link__icon material-icons">language</i>{{ person.language }}
+            </div>
+
+            <div class="section-link" v-for="(hobbie, index) in person.hobbies" :key="index">
+              <i class="section-link__icon material-icons">rss_feed</i>{{ hobbie.name }}
             </div>
 
             <a
@@ -95,7 +101,13 @@
       <div class="content__right">
         <div class="section">
           <div class="section-headline">
-            <i class="section-headline__icon material-icons">work</i>{{ lang.experience }}
+            <i class="section-headline__icon material-icons">work</i>
+            <span>
+              {{ lang.experience }}
+              <span class="experience_year">
+                - {{person.experience_year}}
+              </span>
+            </span>
           </div>
 
           <div class="section-content">
@@ -144,12 +156,12 @@
             <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
           </div>
 
-          <div class="section-content-grid">
+          <div class="section-content">
             <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item-grid"
-              :href="project.url">
+              class="section-content__item-grid">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
+              <span class="section-content__text stack">Tech stack: {{ project.stack }}</span>
               <span class="section-content__text"> {{ project.description }} </span>
             </a>
           </div>
@@ -178,7 +190,6 @@
         </div>
       </div>
     </div>
-
     <img class="picture"/>
   </div>
 </template>
@@ -193,8 +204,8 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <style lang="less" scoped>
-@accent-color: #34495E;
-@banner-color: #42b883;
+@accent-color: #616161;
+@banner-color: #333333;
 @banner-height: 120px;
 @picture-size: 120px;
 @picture-offset: 35px;
@@ -219,12 +230,12 @@ a {
 
 .picture {
   position: absolute;
-  top: @banner-height - @picture-offset;
-  left: @left-column-width + @base-padding * 2 - @picture-size / 2;
+  top: 2%;
+  left: 80%;
   height: @picture-size;
   width: @picture-size;
   border-radius: 50%;
-  border: 5px solid @accent-color;
+  border: 2px solid @accent-color;
   content: url('../../resume/id.jpg');
   z-index: 2;
 }
@@ -281,7 +292,7 @@ a {
 }
 
 .section {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .section-link,
@@ -291,7 +302,7 @@ a {
   color: @accent-color;
   display: inline-block;
   font-size: 1.2em;
-  margin: 8px 0;
+  margin: 10px 0;
 
   &__icon {
     margin-right: 8px;
@@ -304,7 +315,8 @@ a {
   color: rgba(255, 255, 255, 0.59) !important;
 
   &__icon {
-    color: white;
+    color: rgba(255, 255, 255, 0.59) !important;
+    font-size: 1.1em;
   }
 }
 
@@ -322,11 +334,13 @@ a {
     display: block;
     font-size: 1.1em;
     font-weight: 500;
+    margin-bottom: 6px;
   }
 
   &__subheader {
     display: block;
     font-weight: 400;
+    margin-bottom: 4px;
   }
 
   &__plain,
@@ -372,5 +386,11 @@ a {
   color: white;
   margin-top: 5px;
   padding: 5px;
+}
+.experience_year {
+  font-size: .7em;
+}
+.stack {
+  padding-bottom: 5px;
 }
 </style>

@@ -1,92 +1,98 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Sumit
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: Ghosh
+about: Currently Working as a Software Engineer in Netcracker Technology. 
+       My hobby is to learning new technologies, designing, preparing architecture, 
+       developing business logic and taking responsibilities at my job.
+position: Software Engineer
+language: English, Hindi, Bengali
+experience_year: 2.9 years
 
 birth:
-  year: 1990
-  location: New York
+  year: 1992
+  location: Bangalore, India
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
-
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Netcracker Technology
+  position: Software Engineer
+  timeperiod: Since October 2016
+  description: Worked as a full stack developer in various projects.
+  website:
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Bachelor of Technology
+  timeperiod: 2011 - 2015
+  description: Major in Computer Science & Engineering, West Bengal University of Technology.
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
+- name: React JS
+  level: 90
+- name: Vue JS
   level: 95
 - name: JavaScript
   level: 97
 - name: Node.js
   level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
+- name: React Native
+  level: 90
+- name: HTML
+  level: 95  
+- name: CSS
   level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: AWS
+  level: 80    
+- name: Java
+  level: 90
+- name: Spring
+  level: 80
+- name: Postgres SQL
+  level: 80  
+- name: REST/ SOAP
+  level: 90
 
 projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: T-Mobile Genesis Portal
+  platform: Full stack developer
+  stack: Java, jQuery, Spring, Portlet,  Liferay, Oracle, REST, SOAP
+  description: Worked as a javascript/ java developer for T-Mobile Genesis Portal.
+               This platform is used to manage T-mobile's wholesale partners and there subscribers.  
+  url:
+- name: O2 UK E-Commerce Portal
+  platform: Full stack developer
+  stack: Java, Angular, Spring, Portlet,  Liferay, Postgres, REST
+  description: Worked as a javascript/ java developer for O2 UK E-commerce Portal.
+               From this portal, customers can buy phones, sims etc.  
+  url:
+- name: Wedlay
+  platform: Full stack developer
+  stack: React Native, Vue JS, Node JS, Postgres, AWS, REST
+  description: Worked as a full stack developer/ architech for Wedlay,a side project at home.
+               Wedlay is a platform where user can play contests and can win prizes. 
+  url:
+- name: Honeyday
+  platform: Full stack developer
+  stack: Vuejs, Node JS, Postgres, AWS, REST, Cloudflare
+  description: Worked as a full stack developer/ architech for Honeyday,a side project at home.
+               Honeyday is a e-commerce platform where user can buy honey, Beehives etc. 
+  url: https://honeyday.in  
 
 hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
+- name: Reading blogs, watching movies
+  iconClass: fa fa-rss
+  url:
 
 contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: sumitmckv14@gmail.com
+  phone: +91 903558072
+  street: 4th main, NGR Layout
+  city: Bangalore, India
+  website: 
+  github: 
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
