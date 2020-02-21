@@ -1,21 +1,20 @@
 <template>
   <div class="resume">
-    <div class="banner">
-      <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
-      <div class="banner__position">{{ person.position }}</div>
-      <a
-        class="section-link"
-        :href="contactLinks.email">
-        <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
-      </a>
-
-      <div class="section-link">
-        <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
-      </div>
-    </div>
-
     <div class="content">
       <div class="content__left">
+        <div class="banner">
+          <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
+          <div class="banner__position">{{ person.position }}</div>
+          <a
+            class="section-link"
+            :href="contactLinks.email">
+            <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
+          </a>
+
+          <div class="section-link">
+            <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
+          </div>
+        </div>
         <div class="section">
           <div class="section-headline">
             {{ lang.about }}
@@ -190,7 +189,6 @@
         </div>
       </div>
     </div>
-    <img class="picture"/>
   </div>
 </template>
 
@@ -228,36 +226,17 @@ a {
   font-size: 0.9em;
 }
 
-.picture {
-  position: absolute;
-  top: 2%;
-  left: 80%;
-  height: @picture-size;
-  width: @picture-size;
-  border-radius: 50%;
-  border: 2px solid @accent-color;
-  content: url('../../resume/id.jpg');
-  z-index: 2;
-}
-
 .banner {
-  width: calc(100% - @base-padding * 2);
-  height: @banner-height;
-  padding: @base-padding;
-  background-color: @banner-color;
-  /*
-    background-image: url('../../resume/banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  */
   color: white;
+  padding-top: 40px;;
 
   &__fullname {
-    font-size: 32px;
+    font-size: 25px;
   }
 
   &__position {
     font-size: 16px;
+    padding-top: 5px;
   }
 
   &__location {

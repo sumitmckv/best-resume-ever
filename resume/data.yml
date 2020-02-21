@@ -3,12 +3,12 @@ name:
   first: Sumit
   middle:
   last: Ghosh
-about: Currently Working as a Software Engineer in Netcracker Technology. 
-       My hobby is to learning new technologies, designing, preparing architecture, 
-       developing business logic and taking responsibilities at my job.
+about: Software Engineer at Netcracker. 
+       Interested in learning new technologies and designing, preparing architecture, 
+       developing business logic and taking responsibilities.
 position: Software Engineer
 language: English, Hindi, Bengali
-experience_year: 2.9 years
+experience_year: 3.5 years
 
 birth:
   year: 1992
@@ -19,7 +19,7 @@ experience:
   position: Software Engineer
   timeperiod: Since October 2016
   description: Worked as a full stack developer in various projects.
-  website:
+  website: https://www.netcracker.com/
 
 education:
 - degree: Bachelor of Technology
@@ -28,59 +28,69 @@ education:
 
 # skill level goes 0 to 100
 skills:
-- name: React JS
+- name: ReactJS
   level: 90
-- name: Vue JS
+- name: Vue.js
   level: 95
 - name: JavaScript
   level: 97
+- name: TypeScript
+  level: 97  
 - name: Node.js
   level: 93
+- name: Hapi.js
+  level: 93
+- name: Express.js
+  level: 93
 - name: React Native
+  level: 93
+- name: REST
+  level: 90
+- name: GraphQL
   level: 90
 - name: HTML
   level: 95  
 - name: CSS
   level: 80
 - name: AWS
-  level: 80    
-- name: Java
-  level: 90
-- name: Spring
   level: 80
-- name: Postgres SQL
+- name: Postgres
+  level: 80 
+- name: MongoDB
+  level: 80
+- name: TypeORM
+  level: 80
+- name: Sequelize
   level: 80  
-- name: REST/ SOAP
-  level: 90
+- name: Docker
+  level: 80
+- name: CI/CD
+  level: 80
+- name: Git
+  level: 80  
 
 projects:
 - name: T-Mobile Genesis Portal
   platform: Full stack developer
-  stack: Java, jQuery, Spring, Portlet,  Liferay, Oracle, REST, SOAP
-  description: Worked as a javascript/ java developer for T-Mobile Genesis Portal.
+  stack: ReactJS, HapiJS, TypeScript, GraphQL, Postgres, TypeORM 
+  description: Worked as a full stack developer for T-Mobile Genesis Portal.
                This platform is used to manage T-mobile's wholesale partners and there subscribers.  
   url:
-- name: O2 UK E-Commerce Portal
+- name: O2 UK E-Commerce/ E-Care Portal
   platform: Full stack developer
-  stack: Java, Angular, Spring, Portlet,  Liferay, Postgres, REST
-  description: Worked as a javascript/ java developer for O2 UK E-commerce Portal.
-               From this portal, customers can buy phones, sims etc.  
-  url:
-- name: Wedlay
-  platform: Full stack developer
-  stack: React Native, Vue JS, Node JS, Postgres, AWS, REST
-  description: Worked as a full stack developer/ architech for Wedlay,a side project at home.
-               Wedlay is a platform where user can play contests and can win prizes. 
+  stack: NodeJS, ExpressJS, Angular, TypeScript, REST, Sequelize
+  description: Worked as a full stack developer for O2 UK E-commerce/ E-Care Portal.
+               From this portal, customers can buy phones, sims and customers can manage their plans.  
   url:
 - name: Honeyday
   platform: Full stack developer
-  stack: Vuejs, Node JS, Postgres, AWS, REST, Cloudflare
-  description: Worked as a full stack developer/ architech for Honeyday,a side project at home.
+  stack: Vuejs, Node JS, Postgres, AWS, REST, Cloudflare, Docker
+  description: Worked as a full stack developer/ architech for Honeyday, a side project at home.
                Honeyday is a e-commerce platform where user can buy honey, Beehives etc. 
   url: https://honeyday.in  
 
 hobbies:
-- name: Reading blogs, watching movies
+- name: Reading blogs, Coding, Watching movies
   iconClass: fa fa-rss
   url:
 
@@ -88,7 +98,7 @@ contributions:
 
 contact:
   email: sumitmckv14@gmail.com
-  phone: +91 903558072
+  phone: +91 9035580572
   street: 4th main, NGR Layout
   city: Bangalore, India
   website: 
